@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+
+
+</script>
+
+
+
+</head>
+
+<script src="jquery.js"></script>
+<script src="validation1.js"></script>
+
+
+<body>
+<center>
+<h1>Student Information</h1>
+<form action="data.jsp" method="post" name=studform onsubmit="return validateform()">
+<table>
+<tr>
+<td>Enter first Name-
+<td><input type="text"  name="t1" id="t1">
+<span id=err_name></span></td></tr>
+
+<td>Enter Last Name-
+<td><input type="text"  name="t2" id="t2">
+<span id=err_lname></span></td></tr>
+
+<tr><td>Enter Roll No-
+<td><input type="text"  name="t3" id="t3">
+<span id=err_roll></span></td></tr>
+
+<tr><td>Enter Email-
+<td><input type="text" name="t4" id="t4">
+<span id=err_email></span></td></tr>
+
+<tr><td>Enter Phone No-
+<td><input type="text"  name="t5" id="t5">
+<span id=err_phn></span></td></tr>
+
+<tr><td>Enter Address-
+<td><input type="text"  name="t6" id="t6">
+</td></tr>
+
+</table><br>
+<input type="submit" value="Enter">
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registar here...</title>
+   <link rel="stylesheet"   type="text/css"  href="bootstrap.min.css" >
+<link rel="stylesheet"   type="text/css"  href="bootstrap.min.js" >
+<link rel="stylesheet"   type="text/css"  href="sample.css" >
+<!--script src="bootstrap.min.js></script-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+<script src=jquery.js></script>
+<script>
+$(document).ready(function()
+		{
+		$("button").click(function(){
+			$("#newcustfrm").slideToggle(1000);	
+
+			});	
+
+
+		$("#t1").focusout(function(){
+
+			nm=$("#t1").val();
+			//alert(nm);
+
+			pattern=new RegExp(/[^a-zA-Z ]/);
+			//		alert(pattern.test(nm));
+			if(pattern.test(nm))
+			{
+			$("#err_name").text("Invalid name");
+			$("#err_name").show(1000);
+			}
+			else
+			{
+			$("#err_name").hide(1000);
+
+			}
+
+			});
+
+		$("#t2").focusout(function(){
+
+				mb=$("#t2").val();
+				pat=new RegExp(/[^0-9]/);
+				pat1=new RegExp(/^(7|8|9)/);
+				if(!pat.test(mb) && pat1.test(mb) && mb.length==10)
+				{
+				$("#err_mb").hide(1000);
+				}
+				else
+				{
+				$("#err_mb").text("Invalid Mobile Number");
+				$("#err_mb").show(1000);
+				}
+				});
+		$("#email").focusout(function(){
+
+				em=$("#email").val();
+				//		alert(em);
+				pattern=new RegExp(/([\w-+]+(?:\.[\w-+]+)*@(?:[\w-]+\.)+[a-zA-Z]{2,7})/);
+				//		alert(pattern.test(em));
+				if(!pattern.test(em))
+				{
+				$("#err_email").text("Invalid Email");
+				$("#err_email").show(1000);
+				emailerr=true;
+				}
+				else
+				{
+				$("#err_email").hide(1000);
+				emailerr=false;
+				}			
+				})
+
+
+		$("#upass").focusout(function(){
+
+				up=$("#upass").val().length;
+				if(up<8)
+				{
+				$("#err_ps").text("Password must contains 8 characters and one special symbol");
+				$("#err_ps").show(1000);
+				passworderr=true;
+				}
+				else
+				{
+				$("#err_ps").hide(1000);
+				passworderr=false;
+				}			
+				});
+
+		
+		$("#ucpass").focusout(function(){
+
+				up=$("#upass").val();
+				ucp=$("#ucpass").val();
+
+
+				if(up!=ucp)
+				{
+				$("#err_upass").text("Password does not Match");
+				$("#err_upass").show(1000);
+				confirmpasserr=true;
+				}
+				else
+				{
+				$("#err_upass").hide(1000);
+				//$("#err_upass").text("Password Match");
+				confirmpasserr=false;
+				}			
+				});
+
+			       $(function () {
+        		        $('#datetimepicker').datetimepicker({
+                	    format: 'LT'
+            		    	});
+            		});
+     
+			
+	});
+		
+</script>
+<body>
+<div class="container">
+	<img src="avatar.png" class="avatar">
+   <div class="title"><B><U>Registration</U></B>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+<font size=3px><a href="start.html">Back to home</a></font>
+</div>
+    <div class="content">
+      <form action="custreg.jsp" method="POST">
+        <div class="user-details">
+          <div class="input-box">
+          	
+            <span class="details">Full Name</span>
+		 <input type="text" name="t1" id="t1" class="form-control text" placeholder="Enter name" autocomplete="off">
+<td><span id=err_name class="text-danger" font-weight="bold"></span></td>           
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name="t2" id="t2" class="form-control text" placeholder="Enter mobile number" autocomplete="off">
+<td><span id=err_mb class="text-danger" font-weight="bold"></span></td>
+          </div>
+
+<div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" name="email" id="email" class="form-control text" placeholder="Enter valid email" autocomplete="off">
+<td><span id=err_email class="text-danger" font-weight="bold"></span></td>
+          </div>
+
+
+	<div class="input-box">
+        	    <span class="details">Birth Year</span>	
+						<input type="text" name="t3"  id="t3" style="font-size:25px;" class="form-control text"> 
+</div>                                  
+
+
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" name="upass" id="upass" class="form-control text" placeholder="Enter password" autocomplete="off">
+<td><span id=err_ps class="text-danger" font-weight-bold></span></td></div>
+
+
+          
+        </div>
+        </div>
+        <div class="button">
+         <input type="submit" class="btn btn-primary" value="Register">
+	<input type="reset" class="btn btn-danger" value="Reset">
+<div class="input-box">
+            
+ <c class="signup"><font color="white">Already have an account?<a href="custlogin.html">Sign in</a></c>
+			</div>
+	                                                     
+
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

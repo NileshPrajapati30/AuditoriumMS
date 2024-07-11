@@ -1,0 +1,262 @@
+<html>
+<Head>
+<title>Information...</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style>
+
+*
+{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	outline:none;
+}
+body
+{
+	background-color :#2193b0;
+	background-size:cover;
+	font-family:Century Gothic;
+}
+ul
+{	
+	float:right;
+	list-style-type:none;
+	margin-top:5%;;
+}
+ul li
+{	
+	 
+	display:inline-block;
+}
+ul li a
+{
+	top:20%;
+	text-decoration:none;
+	color:black;
+	padding:5px 20px;
+	border:1px solid transparent; 
+}
+ul li a:hover
+{
+	background-color:#fff;
+	color:#000;
+}
+ul li.active a
+{
+	background-color:#fff;
+	color:#000;
+	
+}
+.main
+{
+	max-width:1450px;
+	margin:auto;
+}
+
+.wrapper
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 70px 0;
+	max-width: 500px;
+	max-height: 100vh;
+	margin: 0 auto;
+
+}
+.menu,
+.content
+{
+	width: 100%;
+}
+select
+{
+	width: 100%;
+	padding:15px;
+	font-size: 16px;
+	font-weight: 700;
+	font-family:Century Gothic;
+	border:none;
+	border-radius: 8px;
+	border:2px solid black;
+	box-shadow: 0 2px 2px;  
+}
+.content
+{
+	background-color: white;
+	margin:30px 0;
+}
+.content .data
+{
+	padding:25px;
+	background color:black;
+	border:2px solid black;
+	border-radius: 8px;
+}
+.content p
+{
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid gainsboro;
+}
+.content p:last-child
+{
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.content p b
+{
+	font-color:white;
+	font-weight: 800;
+}
+.content p span
+{
+	float:right;
+	font-weight: normal;
+}
+.data
+{
+	display: none ;
+}
+.card
+{
+position:relative;
+width:200px;
+height:200px;
+display:inline-block;
+border-radius:10px;
+box-sizing:border-box;
+margin:15px 20px;
+background-size:cover;
+background-position:center;
+transition: transform 0.5px;
+}
+.card1
+{
+	background-image:url("11.jpg");
+}
+.card2
+{
+	background-image:url("7.jpg");
+}
+.card3
+{
+	background-image:url("14.jpg");
+}
+.card4
+{
+	background-image:url("12.jpg");
+}
+.card5
+{
+	background-image:url("13.jpg");
+}
+
+
+
+
+</style>
+<body>
+	<div class="main">
+		<ul>
+			<li class="active"><a href=start.html>Logout</a></li>
+			<li><a href=bookhere.html>Next</a></li>
+		</ul>
+	</div>
+	<div class=wrapper>
+		<div class="menu">
+			<select id="name">
+				<option value="a0">Information</option>
+				<option value="a1">Ramkrishna More Natygruha</option>
+				<option value="a2">Yashwantrao Chavan Natygruha</option>
+				<option value="a3">Lokshahir Anna Bhau Sathe Natygruha</option>
+				<option value="a4">Bal Gandhrva Rang Mandir</option>
+				<option value="a5">Natsmrat Nilu Phule Natygruha</option>
+			</select>
+		</div>
+	
+
+	<div class="content">
+	
+		<div id="a0" class="data">
+		<p>Deposit of <b> Rs.5000 </b>for each auditorium is compulsory.</p>
+		<p>There are 4 Time slots which is same for all auditorium.<br>
+		<b>A</b>.9-12 AM<br><b>B</b>.12.30-3.30 PM<br><b>C</b>.5.30-8.30 PM<br><b>D</b>.9.00-12.00 PM</p>
+		<p>At the time of booking you required the auditorium code and time slot code.</p>
+		</div>
+	
+
+
+
+	<div id="a1" class="data">
+		  <p><div class="card card1"></div></p>
+		<p><b>Full name</b><span>Ramkrushna More Natygruha.</span></p>
+		<p><b>Capacity</b><span>700 Person.</span></p>
+		<p><b>Rent(3 hrs)</b><span>5500rs</span></p>
+		<p><b>Parking Facility</b><span>Available</span></p>
+		<p><b>Location</b><span>Near Tata Motors,Chinchwad,Pune.</span></p>
+		<p><b>Booking ID</b><span>AUD1</span></p>
+	</div>
+	
+	<div id="a2" class="data">
+		<p><div class="card card2"></div></p>
+		<p><b>Full name</b><span>Yashwantrao Chavan Natygruha.</span></p>
+		<p><b>Capacity</b><span>900 Person.</span></p>
+		<p><b>Rent(3 hrs)</b><span>5000rs</span></p>
+		<p><b>Parking Facility</b><span>Available</span></p>
+		<p><b>Location</b><span>Near Shivaji Maharaj Statue,Kothrud,Pune.</span></p>
+		<p><b>Booking ID</b><span>AUD2</span></p>
+	</div>
+	
+	<div id="a3" class="data">
+		<p><div class="card card3"></div></p>
+		<p><b>Full name</b><span>Lokshahir Anna Bhau Sathe Natygruha.</span></p>
+		<p><b>Capacity</b><span>830 Person.</span></p>
+		<p><b>Rent(3 hrs)</b><span>5000rs</span></p>
+		<p><b>Parking Facility</b><span>Available</span></p>
+		<p><b>Location</b><span>Satara road near vivekanand Park,Kothrud,Pune.</span></p>
+		<p><b>Booking ID</b><span>AUD3</span></p>
+	</div>
+	
+	<div id="a4" class="data">
+		<p><div class="card card4"></div></p>
+		<p><b>Full name</b><span>Bal Gandhrva Rang Mandir.</span></p>
+		<p><b>Capacity</b><span>989 Person.</span></p>
+		<p><b>Rent(3 hrs)</b><span>6000rs</span></p>
+		<p><b>Parking Facility</b><span>Available</span></p>
+		<p><b>Location</b><span>JM road,Shivajinagar,Pune.</span></p>
+		<p><b>Booking ID</b><span>AUD4</span></p>
+	</div>
+	
+	<div id="a5" class="data">
+		<p><div class="card card5"></div></p>
+		<p><b>Full name</b><span>Natsmrat Nilu Phule Natygruha.</span></p>
+		<p><b>Capacity</b><span>500 Person.</span></p>
+		<p><b>Rent(3 hrs)</b><span>5000rs</span></p>
+		<p><b>Parking Facility</b><span>Available</span></p>
+		<p><b>Location</b><span>Vinayak Nagar,Pimple gurav,Pune.</span></p>
+		<p><b>Booking ID</b><span>AUD5</span></p>
+	</div>
+
+</div>
+</div>	
+
+<script src=jquery.js></script><script>
+	$(document).ready(function(){
+		$("#name").on('change',function(){
+			$(".data").hide();
+			$("#" + $(this).val()).fadeIn(700);
+		}).change();
+	});
+	
+</script>
+
+</body>
+</html>
+
+

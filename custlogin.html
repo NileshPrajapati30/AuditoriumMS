@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login here...</title>
+<meta charset="utf-8">
+<link rel="stylesheet"   type="text/css"  href="bootstrap.min.css" >
+<link rel="stylesheet"   type="text/css"  href="sample.css" >
+
+<!--script src="bootstrap.min.js"></script-->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("t2");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+</head>
+<body>
+<div class="container">
+   <div class="title"><B><U>Login</U></B>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+
+<font size=3px><a href="start.html">Back to home</a></font>
+
+</div>
+    <div class="content">
+      <form action="custlogin.jsp" method="POST">
+        <div class="user-details">
+
+           
+          <div class="input-box">
+            <img src="avatar.png" class="avatar">
+            <span class="details">Phone Number</span>
+            <input type="text" name="t1" id="t1" class="form-control text" placeholder="Enter registered mobile number" autocomplete="off">
+<td><span id=err_mb class="text-danger" font-weight="bold"></span></td>
+
+          </div><br>
+
+
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" name="t2" id="t2" class="form-control text" placeholder="Enter password" autocomplete="off">
+<td></td></div>
+
+<div class="input-box">
+		
+          </div>
+
+	<div class="button">
+		<font color="white"><font size=3px>See Password<input type="checkbox" onclick="myFunction()"></font></font>
+          </div>
+
+
+         
+        </div>
+        </div>
+        <div class="button">
+         <input type="submit" class="btn btn-primary" value="Login">
+	<input type="reset" class="btn btn-danger" value="Reset">
+	
+<div class="input-box">
+            
+ <c class="Sign up"><font color="white">New member?<a href="custreg.html">Sign up</a></c></div>
+<c class="Sign up">Fogot password?<a href="forgot.html">Click here</a></c></div>
+
+
+
+        </div>
+      </form>
+
+
+</body>
+</html>
+

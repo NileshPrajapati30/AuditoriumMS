@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login here...</title>
+<meta charset="utf-8">
+<link rel="stylesheet"   type="text/css"  href="bootstrap.min.css" >
+<link rel="stylesheet"   type="text/css"  href="sample.css" >
+
+<!--script src="bootstrap.min.js"></script-->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("t3");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+</head>
+<body>
+<div class="container">
+   <div class="title"><B><U>Admin register</U></B>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+
+<font size=3px><a href="start.html">Back to home</a></font>
+
+</div>
+    <div class="content">
+      <form action="adminentry.jsp" method="POST">
+        <div class="user-details">
+
+           
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name="t5" id="t1" class="form-control text" placeholder="Enter  mobile number" autocomplete="off">
+<td><span id=err_mb class="text-danger" font-weight="bold"></span></td>
+
+          </div><br>
+
+
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" name="t6" id="t2" class="form-control text" placeholder="Enter password" autocomplete="off">
+<td></td></div>
+
+<div class="input-box">
+		
+          </div>
+
+	
+
+         
+        </div>
+        </div>
+        <div class="button">
+         <input type="submit" class="btn btn-primary" value="Submit">
+	<input type="reset" class="btn btn-danger" value="Reset">
+	
+<div class="input-box">
+            
+
+        </div>
+      </form>
+
+
+</body>
+</html>
+

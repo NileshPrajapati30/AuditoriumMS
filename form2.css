@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body
+{
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+  background-color:#2193b0;
+  background-size:cover;
+}
+.container{
+
+  max-width: 400px;
+  width: 100%;
+  background-image:url("new1.jpg");
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title{
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+  position: center;
+}
+/*.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+*/
+/*form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(50% - 20px);
+}
+*/.user-details .input-box input{
+  height: 40px;
+  width: 100%;
+  outline:1px solid  black;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid black;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid
+{
+  border-color: black;
+}
+/* form .category
+{
+   display: flex;
+   width: 90%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+}
+*/ /*form .category label
+{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}*/
+/* form .category label .dot
+{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: black;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}*/
+/*.btn
+{
+  height: 30px;
+  width: 150px;
+}
+*/
